@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Backend API</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>E-Commerce Backend API</h1>
+
+    <p class="subtitle">
+        RESTful Backend built with Django REST Framework
+    </p>
+
+    <div class="status">
+        <span>🟢 Live on Railway</span>
+    </div>
+
+    <div class="card">
+
+        <h2>Tech Stack</h2>
+
+        <ul>
+            <li>Django</li>
+            <li>Django REST Framework</li>
+            <li>MySQL</li>
+            <li>Docker</li>
+            <li>Railway</li>
+            <li>JWT Authentication</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Available APIs</h2>
+
+        <ul>
+            <li><a href="/api/products/">Products</a></li>
+            <li><a href="/api/cart/">Cart</a></li>
+            <li><a href="/api/orders/">Orders</a></li>
+            <li><a href="/api/token/">JWT Login</a></li>
+            <li><a href="/admin/">Admin Panel</a></li>
+        </ul>
+
+    </div>
+
+    <div class="buttons">
+
+        <a href="/api/products/" class="btn">
+            View Products
+        </a>
+
+        <a href="https://github.com/Ayush-1018/ecommerce-backend-django"
+           class="btn"
+           target="_blank">
+            GitHub
+        </a>
+
+    </div>
+
+    <footer>
+
+        Made with ❤️ by Ayush Kumar
+
+    </footer>
+
+</div>
+
+</body>
+</html>

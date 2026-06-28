@@ -1,3 +1,4 @@
+from .views import home
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import (
@@ -6,6 +7,7 @@ from rest_framework_simplejwt.views import (
 )
 
 urlpatterns = [
+    path("", home),
     path('admin/', admin.site.urls),
     path('api/products/', include('products.urls')),
     path('api/cart/', include('cart.urls')),
